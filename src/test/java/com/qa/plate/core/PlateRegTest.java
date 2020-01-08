@@ -66,6 +66,16 @@ class PlateRegTest {
 		
 	}
 	
+	@Test
+	void plate_identify_with_letters() {
+		PlateReg pr = new PlateReg();
+		String expected = "String entered, only integers allowed";
+		String result = pr.PlateReg("hello");
+		
+		assertEquals(expected, result);
+		
+	}
+	
 
 	
 	
